@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/layout"
+    tools:context=".Activity2">
+
+    <view
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        android:id="@+id/youtubePlay"
+        layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"/>
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonPlay"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/youtubePlay"
+        android:text="PLAY"/>
+
+    <LinearLayout
+        android:id="@+id/innerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/ButtonPlay"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRecord"
+            android:text="Record"
+            android:textSize="@dimen/size6"
+            android:padding="@dimen/padding2mm"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnstprcrd"
+            android:text="Stop"
+            android:textSize="@dimen/size6"
+            android:padding="@dimen/padding2mm"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPlyrcrd"
+            android:text="Play"
+            android:textSize="@dimen/size6"
+            android:padding="@dimen/padding2mm"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStpplyrcrd"
+            android:text="Stop"
+            android:textSize="@dimen/size6"
+            android:padding="@dimen/padding2mm"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/innerLayout2"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/innerLayout"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_welcome"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:text="@string/welcome_user"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/profile_each"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/innerLayout2"/>
+</RelativeLayout>

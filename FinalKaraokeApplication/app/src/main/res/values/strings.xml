@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FinalKaraokeApplication</string>
+    <string name="default_age">always 25</string>
+    <string name="default_profile_name">profile name</string>
+    <string name="song_name">song\'s name</string>
+    <string name="guest_profile_hint">Profile Name</string>
+    <string name="add_button_text">CREATE</string>
+    <string name="welcome_user">Welcome User</string>
+</resources>
